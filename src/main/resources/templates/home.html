@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Sams Website</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Sam's Website</title>
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css}" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+    <link rel="stylesheet" th:href="@{/home.css}" />
 </head>
+
 <body>
-    <h1>Home</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deserunt dolor dolorum eaque earum explicabo facilis ipsam iusto laboriosam modi necessitatibus nulla, officia praesentium quam quis ratione rem sit tenetur.</p>
-    <img src="http://placehold.it/300x300" alt="placeholder">
+    <nav class="container">
+        <div>Home</div>
+        <div>Workouts</div>
+        <div>Nutrition</div>
+        <div>Stretching</div>
+    </nav>
+
+    <div class="body">
+        <h1>Home</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deserunt dolor dolorum eaque earum explicabo
+            facilis ipsam iusto laboriosam modi necessitatibus nulla, officia praesentium quam quis ratione rem sit tenetur.
+        </p>
+
+        <div class="image-links">
+            <img th:src = "@{images/annie-spratt-1113371-unsplash.png}" alt="stretching"/>
+            <img th:src = "@{images/syd-wachs-120739-unsplash.png}" alt="nutrition"/>
+            <img th:src = "@{images/victor-freitas-546919-unsplash.png}" alt="workouts"/>
+        </div>
+    </div>
 
 </body>
 </html>
