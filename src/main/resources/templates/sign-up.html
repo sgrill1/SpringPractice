@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up!</title>
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css}" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+    <nav class="container-navbar">
+        <div class="navbar" id="logo"><img src="https://img.icons8.com/nolan/64/000000/leaf.png"/></div>
+        <div class="navbar" id="mission">The Mission</div>
+        <div class="navbar" id="kitchen">The Kitchen</div>
+        <div class="navbar" id="gym">The Gym</div>
+        <div class="navbar" id="searchbar"><input placeholder="&#x1F50D"></div>
+        <div class="navbar" id="banner"><h1>Greenhouse | Fitness</h1></div>
+        <div class="navbar" id="sign-up"><a th:href="@{/sign-up}">Sign-Up</a></div>
+    </nav>
+
+</body>
+</html>
