@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+body {
+    font-family: 'varela round', sans-serif;
+    background-color: black;
+    color: silver;
+}
+
+.container-navbar {
+    padding-bottom: 3%;
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+}
+
+#banner h1{
+    margin: 0;
+    background: -webkit-radial-gradient(grey, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;

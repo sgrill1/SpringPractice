@@ -2,9 +2,9 @@ $(".caption").hide();
 
 $(".image-link").hover(
     function() {
-        $(".image").fadeTo(10,0.3);
+        $(this).find(".image").fadeTo(10,0.3);
     },function(){
-        $(".image").fadeTo(10,1);
+        $(this).find(".image").fadeTo(10,1);
     });
 
 
