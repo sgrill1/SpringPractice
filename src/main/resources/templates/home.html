@@ -8,30 +8,58 @@
 
     <title>Sam's Website</title>
     <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css}" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
-    <link rel="stylesheet" th:href="@{/home.css}" />
+    <link rel="stylesheet" th:href="@{css/home.css}" />
 </head>
 
 <body>
     <nav class="container">
-        <div>Home</div>
-        <div>Workouts</div>
-        <div>Nutrition</div>
-        <div>Stretching</div>
+        <div class="navbar" id="logo"><img src="https://img.icons8.com/nolan/64/000000/leaf.png"/></div>
+        <div class="navbar" id="workouts">Workouts</div>
+        <div class="navbar" id="nutrition">Nutrition</div>
+        <div class="navbar" id="stretching">Stretching</div>
+        <div class="navbar" id="searchbar"><input placeholder="&#x1F50D"></div>
+        <div class="navbar" id="banner"><h1>Greenhouse | Fitness</h1></div>
     </nav>
 
     <div class="body">
-        <h1>Home</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deserunt dolor dolorum eaque earum explicabo
-            facilis ipsam iusto laboriosam modi necessitatibus nulla, officia praesentium quam quis ratione rem sit tenetur.
-        </p>
-
-        <div class="image-links">
-            <img th:src = "@{images/annie-spratt-1113371-unsplash.png}" alt="stretching"/>
-            <img th:src = "@{images/syd-wachs-120739-unsplash.png}" alt="nutrition"/>
-            <img th:src = "@{images/victor-freitas-546919-unsplash.png}" alt="workouts"/>
+        <div class="container-mission-statement">
+            <h1>🌱 Welcome to Greenhouse Fitness! 🌱</h1>
+            <h2>🌱 For people & planet 🌱</h2>
+            <hr/>
+            <p>At Greenhouse Fitness it is our mission to make the fitness industry environmentally sustainable. We are creating a
+            community that care about the health of people & planet. It all starts with our zero emissions workout space located
+            in the centre of London. We have a social space open to all relax, work or study. Our cafe offers sustainably sourced foods
+            that will power mind, body and soul. We host speakers to share ideas on how we can all make a difference</p>
+            <p>Change starts now.</p>
         </div>
+
+        <div class="container-images">
+                <figure class="image-link">
+                    <img class="image" th:src = "@{images/syd-wachs-120739-unsplash.png}" alt="nutrition-img"/>
+                    <figcaption class="caption">
+                        <h2>Nutrition</h2>
+                    </figcaption>
+                </figure>
+                <figure class="image-link">
+                    <img class="image" th:src = "@{images/annie-spratt-1113371-unsplash.png}" alt="stretching-img"/>
+                    <figcaption class="caption">
+                        <h2>Stretching</h2>
+                    </figcaption>
+                </figure>
+                <figure class="image-link">
+                    <img class="image" th:src = "@{images/victor-freitas-546919-unsplash.png}" alt="workouts-img"/>
+                    <figcaption class="caption">
+                        <h2>Workouts</h2>
+                    </figcaption>
+                </figure>
+        </div>
+
+        <footer>
+
+        </footer>
     </div>
 
+<script th:src="@{vendor/jquery-3.3.1.js}"></script>
+<script th:src="@{js/home.js}"></script>
 </body>
 </html>
